@@ -1,0 +1,77 @@
+.people {
+  color: #2f4f4f;
+  grid-template-columns: repeat(2, 200px);
+  justify-content: center;
+  gap: 30px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+  display: grid;
+}
+
+@media (width >= 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
+.people .person {
+  text-align: center;
+  flex-direction: column;
+  width: 200px;
+  height: 231px;
+  display: flex;
+}
+
+.people .person:hover .extra {
+  display: flex;
+}
+
+.people .person .details {
+  margin-top: 8px;
+}
+
+.people .person .details .extra {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20, 7px;
+  color: #000;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 287px;
+  display: none;
+}
+
+.people .person .photo {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.people .person .photo .rank {
+  font-size: 16px;
+  line-height: 18, 4px;
+  color: #8b0000;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  align-content: center;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+}
+
+.people .person .photo img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=index.b1276d39.css.map */
